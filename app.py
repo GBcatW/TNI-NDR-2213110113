@@ -4,7 +4,7 @@ from sklearn.linear_model import LinearRegression
 import matplotlib.pyplot as plt
 
 # Load the Excel data
-df = pd.read_excel("PTT-SET-19May2025-6M.xlsx", sheet_name="PTT", skiprows=1)
+df = pd.read_excel("CPF.xlsx", sheet_name="CPF", skiprows=1)
 df.columns = ["วันที ่", "ราคาเปิด", "ราคาสูงสุด", "ราคาต่ำสุด", "ราคาเฉลี่ย", "ราคาปิด", 
               "เปลี่ยนแปลง", "เปลี่ยนแปลง(%)", "ปริมาณ(พันหุ้น)", "มูลค่า(ล้านบาท)", 
               "SET Index", "SET เปลี่ยนแปลง(%)"]
@@ -39,8 +39,8 @@ model.fit(X, y)
 trend = model.predict(X)
 
 # Streamlit components
-st.title("PTT Closing Price Trend")
-st.write("### Linear Regression Analysis of PTT Closing Prices")
+st.title("CPF Closing Price Trend")
+st.write("### Linear Regression Analysis of CPF Closing Prices")
 
 # Make table wider by specifying width
 st.dataframe(df, width=2200)
