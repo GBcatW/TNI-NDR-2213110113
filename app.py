@@ -39,8 +39,8 @@ model.fit(X, y)
 trend = model.predict(X)
 
 # Streamlit components
-st.title("CPF Closing Price Trend")
-st.write("### Linear Regression Analysis of CPF Closing Prices")
+st.title("📈 CPF Closing Price Trend")
+st.markdown("### 🔍 วิเคราะห์ราคาปิดหุ้น CPF ด้วย Linear Regression")
 
 # Make table wider by specifying width
 st.dataframe(df, width=2200)
@@ -50,7 +50,10 @@ ax.plot(df["วันที ่"], y, label="Actual")
 ax.plot(df["วันที ่"], trend, label="Trend", color="red", linestyle="--")
 ax.set_xlabel("Date")
 ax.set_ylabel("Closing Price (Baht)")
+ax.set_title("CPF Closing Price Trend", fontsize=16)
 ax.legend()
 ax.grid()
 
 st.pyplot(fig)
+st.markdown("---")
+st.markdown("💡 **หมายเหตุ:** การวิเคราะห์นี้ใช้การถดถอยเชิงเส้น (Linear Regression) เพื่อหาแนวโน้มราคาหุ้นในช่วงเวลา 6 เดือนล่าสุด")
