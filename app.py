@@ -38,7 +38,7 @@ df = df.sort_values("วันที ่")
 st.sidebar.title("🛠️ การตั้งค่า")
 start_date = st.sidebar.date_input("📅 วันที่เริ่มต้น", df["วันที ่"].min())
 end_date = st.sidebar.date_input("📅 วันที่สิ้นสุด", df["วันที ่"].max())
-degree = st.sidebar.slider("🎚️ ระดับ Polynomial Regression", 1, 5, 1)
+degree = st.sidebar.slider("🎚️ ระดับ Polynomial Regression", 1, 2, 1)
 show_table = st.sidebar.checkbox("📋 แสดงตารางข้อมูล", value=False)
 
 # ------------------------ 📊 Filter Data ------------------------
