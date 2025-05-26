@@ -30,7 +30,10 @@
 
 ## 📊 Presentation Slides
 
-ดูสไลด์นำเสนอ: [presentation.pdf](slides/TNI-NDR-2213110113.pdf)
+- 📄 ดูสไลด์นำเสนอในรูปแบบ PDF: [TNI-NDR-2213110113.pdf](slides/TNI-NDR-2213110113.pdf)  
+- 🎨 ดูสไลด์นำเสนอผ่าน Canva: [Canva Presentation](https://www.canva.com/design/DAGoR3CeYFc/HxeHUYnfrVmpSY1t0tMzeg/edit?utm_content=DAGoR3CeYFc&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+
+
 
 ## ▶️ การรันโปรเจกต์
 
